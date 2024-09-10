@@ -5,6 +5,7 @@ import (
 	"leetcode/02_linkedList"
 	"leetcode/03_hashmap"
 	"leetcode/04_strings"
+	"leetcode/05_stack_queue"
 	"leetcode/07_backtracking"
 	"leetcode/08_greedy"
 	"leetcode/09_dynamicProgramming"
@@ -17,14 +18,14 @@ func main() {
 	// linkedListTest()
 	// hashmapTest()
 	// stringTest()
-	// stackQueueTest()
+	stackQueueTest()
 	// binaryTreeTest()
 	// backtrackingTest()
 	// greedyTest()
 	// dynamicProgrammingTest()
-	// monostack()
+	// monostackTest()
 	// graphTest()
-	assessmentTest()
+	// assessmentTest()
 }
 
 func assessmentTest() {
@@ -42,7 +43,7 @@ func graphTest() {
 
 }
 
-func monostack() {
+func monostackTest() {
 	__monostack.Trap()
 }
 
@@ -65,7 +66,8 @@ func binaryTreeTest() {
 }
 
 func stackQueueTest() {
-
+	__stack_queue.MyQueueTest()
+	__stack_queue.MyStackTest()
 }
 
 func stringTest() {
