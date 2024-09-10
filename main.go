@@ -4,11 +4,11 @@ import (
 	"leetcode/01_array"
 	"leetcode/02_linkedList"
 	"leetcode/03_hashmap"
-	__monostack "leetcode/10_monostack"
-	"leetcode/4_strings"
-	"leetcode/7_backtracking"
-	"leetcode/8_greedy"
-	__dynamicProgramming "leetcode/9_dynamicProgramming"
+	"leetcode/04_strings"
+	"leetcode/07_backtracking"
+	"leetcode/08_greedy"
+	"leetcode/09_dynamicProgramming"
+	"leetcode/10_monostack"
 	"leetcode/assessment"
 )
 
