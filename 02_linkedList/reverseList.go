@@ -1,4 +1,4 @@
-package __linkedList
+package _2_linkedList
 
 func reverseList(head *ListNode) *ListNode {
 	if head == nil {

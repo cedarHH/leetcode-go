@@ -1,4 +1,4 @@
-package __linkedList
+package _2_linkedList
 
 type MyLinkedList struct {
 	Val  int

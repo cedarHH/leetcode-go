@@ -1,4 +1,4 @@
-package __linkedList
+package _2_linkedList
 
 func detectCycle(head *ListNode) *ListNode {
 	slow, fast := head, head

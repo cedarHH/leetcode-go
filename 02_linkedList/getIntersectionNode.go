@@ -1,4 +1,4 @@
-package __linkedList
+package _2_linkedList
 
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	lenA, lenB := 0, 0

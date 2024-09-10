@@ -1,10 +1,10 @@
 package main
 
 import (
+	"leetcode/01_array"
+	"leetcode/02_linkedList"
+	"leetcode/03_hashmap"
 	__monostack "leetcode/10_monostack"
-	"leetcode/1_array"
-	"leetcode/2_linkedList"
-	"leetcode/3_hashmap"
 	"leetcode/4_strings"
 	"leetcode/7_backtracking"
 	"leetcode/8_greedy"
@@ -89,13 +89,13 @@ func hashmapTest() {
 }
 
 func linkedListTest() {
-	__linkedList.RemoveElements()
-	__linkedList.LinkedList()
-	__linkedList.ReverseList()
-	__linkedList.SwapPairs()
-	__linkedList.RemoveNthFromEnd()
-	__linkedList.GetIntersectionNode()
-	__linkedList.DetectCycle()
+	_2_linkedList.RemoveElements()
+	_2_linkedList.LinkedList()
+	_2_linkedList.ReverseList()
+	_2_linkedList.SwapPairs()
+	_2_linkedList.RemoveNthFromEnd()
+	_2_linkedList.GetIntersectionNode()
+	_2_linkedList.DetectCycle()
 }
 
 func arrayTest() {

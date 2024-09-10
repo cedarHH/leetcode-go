@@ -1,4 +1,4 @@
-package __linkedList
+package _2_linkedList
 
 func swapPairs(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
