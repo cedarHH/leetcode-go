@@ -24,17 +24,18 @@ func main() {
 	// dynamicProgrammingTest()
 	// monostack()
 	// graphTest()
-	// assessmentTest()
+	assessmentTest()
 }
 
 func assessmentTest() {
 	// assessment.Echo()
-	assessment.FindMode()
-	assessment.ThousandSeparator()
-	assessment.GetNoZeroIntegers()
-	assessment.MinAreaRect()
-	assessment.CoinChange()
-	assessment.BitSetTest()
+	//assessment.FindMode()
+	//assessment.ThousandSeparator()
+	//assessment.GetNoZeroIntegers()
+	//assessment.MinAreaRect()
+	//assessment.CoinChange()
+	//assessment.BitSetTest()
+	assessment.Misc()
 }
 
 func graphTest() {
