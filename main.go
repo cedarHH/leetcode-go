@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	arrayTest()
+	// arrayTest()
 	// linkedListTest()
 	// hashmapTest()
 	// stringTest()
@@ -25,7 +25,7 @@ func main() {
 	// dynamicProgrammingTest()
 	// monostackTest()
 	// graphTest()
-	// assessmentTest()
+	assessmentTest()
 }
 
 func assessmentTest() {
@@ -37,6 +37,7 @@ func assessmentTest() {
 	//assessment.CoinChange()
 	//assessment.BitSetTest()
 	assessment.Misc()
+	assessment.AssignTasks()
 }
 
 func graphTest() {
