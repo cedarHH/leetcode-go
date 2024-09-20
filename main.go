@@ -18,7 +18,7 @@ func main() {
 	// linkedListTest()
 	// hashmapTest()
 	// stringTest()
-	stackQueueTest()
+	// stackQueueTest()
 	// binaryTreeTest()
 	// backtrackingTest()
 	// greedyTest()
@@ -38,6 +38,8 @@ func assessmentTest() {
 	//assessment.BitSetTest()
 	assessment.Misc()
 	assessment.AssignTasks()
+	assessment.CountRangeSum()
+	assessment.NumIslands()
 }
 
 func graphTest() {

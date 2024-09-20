@@ -25,6 +25,6 @@ func search(nums []int, target int) int {
 
 func Search() {
 	nums := []int{-1, 0, 3, 5, 9, 12}
-	target := 1
+	target := 3
 	fmt.Println(search(nums, target))
 }
