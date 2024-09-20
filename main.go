@@ -40,6 +40,7 @@ func assessmentTest() {
 	assessment.AssignTasks()
 	assessment.CountRangeSum()
 	assessment.NumIslands()
+	assessment.CountPrimes()
 }
 
 func graphTest() {
