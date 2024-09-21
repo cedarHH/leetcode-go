@@ -1,15 +1,15 @@
 package main
 
 import (
-	"leetcode/01_array"
-	"leetcode/02_linkedList"
-	"leetcode/03_hashmap"
-	"leetcode/04_strings"
-	"leetcode/05_stack_queue"
-	"leetcode/07_backtracking"
-	"leetcode/08_greedy"
-	"leetcode/09_dynamicProgramming"
-	"leetcode/10_monostack"
+	__array "leetcode/01_array"
+	_2_linkedList "leetcode/02_linkedList"
+	__hashmap "leetcode/03_hashmap"
+	__strings "leetcode/04_strings"
+	__stack_queue "leetcode/05_stack_queue"
+	__backtracking "leetcode/07_backtracking"
+	__greedy "leetcode/08_greedy"
+	__dynamicProgramming "leetcode/09_dynamicProgramming"
+	__monostack "leetcode/10_monostack"
 	"leetcode/assessment"
 )
 
@@ -21,7 +21,7 @@ func main() {
 	// stackQueueTest()
 	// binaryTreeTest()
 	// backtrackingTest()
-	// greedyTest()
+	greedyTest()
 	// dynamicProgrammingTest()
 	// monostackTest()
 	// graphTest()
@@ -41,6 +41,7 @@ func assessmentTest() {
 	assessment.CountRangeSum()
 	assessment.NumIslands()
 	assessment.CountPrimes()
+	assessment.Temp()
 }
 
 func graphTest() {
@@ -59,6 +60,7 @@ func dynamicProgrammingTest() {
 
 func greedyTest() {
 	__greedy.MaxProfit()
+	__greedy.FindContentChildren()
 }
 
 func backtrackingTest() {
