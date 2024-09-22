@@ -2,7 +2,7 @@ package main
 
 import (
 	__array "leetcode/01_array"
-	_2_linkedList "leetcode/02_linkedList"
+	__linkedList "leetcode/02_linkedList"
 	__hashmap "leetcode/03_hashmap"
 	__strings "leetcode/04_strings"
 	__stack_queue "leetcode/05_stack_queue"
@@ -21,11 +21,11 @@ func main() {
 	// stackQueueTest()
 	// binaryTreeTest()
 	// backtrackingTest()
-	greedyTest()
-	// dynamicProgrammingTest()
+	// greedyTest()
+	dynamicProgrammingTest()
 	// monostackTest()
 	// graphTest()
-	assessmentTest()
+	// assessmentTest()
 }
 
 func assessmentTest() {
@@ -53,6 +53,12 @@ func monostackTest() {
 }
 
 func dynamicProgrammingTest() {
+	__dynamicProgramming.Fib()
+	__dynamicProgramming.ClimbStairs()
+	__dynamicProgramming.MinCostClimbingStairs()
+	__dynamicProgramming.UniquePaths()
+	__dynamicProgramming.UniquePathsWithObstacles()
+	__dynamicProgramming.IntegerBreak()
 	__dynamicProgramming.MinDistance()
 	__dynamicProgramming.Dji()
 	__dynamicProgramming.Trap()
@@ -98,13 +104,13 @@ func hashmapTest() {
 }
 
 func linkedListTest() {
-	_2_linkedList.RemoveElements()
-	_2_linkedList.LinkedList()
-	_2_linkedList.ReverseList()
-	_2_linkedList.SwapPairs()
-	_2_linkedList.RemoveNthFromEnd()
-	_2_linkedList.GetIntersectionNode()
-	_2_linkedList.DetectCycle()
+	__linkedList.RemoveElements()
+	__linkedList.LinkedList()
+	__linkedList.ReverseList()
+	__linkedList.SwapPairs()
+	__linkedList.RemoveNthFromEnd()
+	__linkedList.GetIntersectionNode()
+	__linkedList.DetectCycle()
 }
 
 func arrayTest() {
