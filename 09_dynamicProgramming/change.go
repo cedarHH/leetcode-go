@@ -1,6 +1,8 @@
 package __dynamicProgramming
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func change(amount int, coins []int) int {
 	dp := make([]int, amount+1)
@@ -10,6 +12,7 @@ func change(amount int, coins []int) int {
 			dp[i] = dp[i] + dp[i-c]
 		}
 	}
+
 	return dp[amount]
 }
 

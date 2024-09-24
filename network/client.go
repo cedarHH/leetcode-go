@@ -1,4 +1,4 @@
-package main
+package network
 
 import (
 	"bufio"
@@ -9,9 +9,11 @@ import (
 	"net"
 	"net/http"
 	"net/url"
+	"sync"
 )
 
-func udpClient() {
+func udpClient(wg *sync.WaitGroup) {
+	defer wg.Done()
 	conn, err := net.Dial("udp", "localhost:8081")
 	if err != nil {
 		fmt.Println("Error dialing UDP server:", err)
@@ -33,7 +35,8 @@ func udpClient() {
 	fmt.Printf("Received: %s\n", string(buf[:n]))
 }
 
-func tcpClient() {
+func tcpClient(wg *sync.WaitGroup) {
+	defer wg.Done()
 	conn, err := net.Dial("tcp", "localhost:8082")
 	if err != nil {
 		fmt.Println("Error dialing TCP server:", err)
@@ -55,7 +58,8 @@ func tcpClient() {
 	fmt.Printf("Received: %s\n", string(buf[:n]))
 }
 
-func httpClient() {
+func httpClient(wg *sync.WaitGroup) {
+	defer wg.Done()
 	endpoint := "http://localhost:8083/echo"
 	data := url.Values{}
 	data.Set("message", "Hello HTTP!")
@@ -76,7 +80,8 @@ func httpClient() {
 	fmt.Printf("Received: %s\n", string(body))
 }
 
-func sseClient() {
+func sseClient(wg *sync.WaitGroup) {
+	defer wg.Done()
 	resp, err := http.Get("http://localhost:8084/sse?message=Hello%20SSE!")
 	if err != nil {
 		fmt.Println("Error connecting to SSE server:", err)
@@ -95,7 +100,8 @@ func sseClient() {
 	}
 }
 
-func websocketClient() {
+func websocketClient(wg *sync.WaitGroup) {
+	defer wg.Done()
 	c, _, err := websocket.DefaultDialer.Dial("ws://localhost:8085/ws", nil)
 	if err != nil {
 		log.Fatal("Error connecting to WebSocket server:", err)
@@ -116,10 +122,10 @@ func websocketClient() {
 	fmt.Printf("Received: %s\n", msg)
 }
 
-func main() {
-	udpClient()
-	tcpClient()
-	httpClient()
-	sseClient()
-	websocketClient()
+func StartClient(wg *sync.WaitGroup) {
+	udpClient(wg)
+	tcpClient(wg)
+	httpClient(wg)
+	sseClient(wg)
+	websocketClient(wg)
 }

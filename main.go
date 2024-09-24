@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	__array "leetcode/01_array"
 	__linkedList "leetcode/02_linkedList"
 	__hashmap "leetcode/03_hashmap"
@@ -11,6 +12,9 @@ import (
 	__dynamicProgramming "leetcode/09_dynamicProgramming"
 	__monostack "leetcode/10_monostack"
 	"leetcode/assessment"
+	"leetcode/network"
+	"sync"
+	"time"
 )
 
 func main() {
@@ -22,14 +26,14 @@ func main() {
 	// binaryTreeTest()
 	// backtrackingTest()
 	// greedyTest()
-	dynamicProgrammingTest()
+	// dynamicProgrammingTest()
 	// monostackTest()
 	// graphTest()
 	// assessmentTest()
+	networkTest()
 }
 
 func assessmentTest() {
-	// assessment.Echo()
 	//assessment.FindMode()
 	//assessment.ThousandSeparator()
 	//assessment.GetNoZeroIntegers()
@@ -42,6 +46,21 @@ func assessmentTest() {
 	assessment.NumIslands()
 	assessment.CountPrimes()
 	assessment.Temp()
+}
+
+func networkTest() {
+	wg := &sync.WaitGroup{}
+	wg.Add(5)
+	ctx, cancel := context.WithCancel(context.Background())
+	go network.Echo(ctx, wg)
+	wg.Wait()
+
+	wgc := &sync.WaitGroup{}
+	wgc.Add(5)
+	network.StartClient(wgc)
+	wgc.Wait()
+	cancel()
+	time.Sleep(1 * time.Second)
 }
 
 func graphTest() {
