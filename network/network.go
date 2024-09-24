@@ -246,7 +246,7 @@ func startWebSocketServer(ctx context.Context, wg *sync.WaitGroup) {
 	fmt.Println("WebSocket server gracefully stopped")
 }
 
-func Echo(ctx context.Context, wg *sync.WaitGroup) {
+func EchoServer(ctx context.Context, wg *sync.WaitGroup) {
 	go startUDPServer(ctx, wg)
 	go startTCPServer(ctx, wg)
 	go startHTTPServer(ctx, wg)
