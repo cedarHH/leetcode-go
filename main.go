@@ -14,6 +14,7 @@ import (
 	"leetcode/assessment"
 	"leetcode/concurrency"
 	"leetcode/network"
+	"leetcode/temp"
 	"sync"
 	"time"
 )
@@ -31,8 +32,17 @@ func main() {
 	// monostackTest()
 	// graphTest()
 	// networkTest()
-	concurrencyTest()
+	// concurrencyTest()
 	// assessmentTest()
+	// temp.RedisExample()
+	// temp.ShopeeAssessment()
+	// temp.DewuAssessment()
+	// temp.TripAssessment()
+	// temp.SxfAssessment()
+	// temp.JdAssessment()
+	// temp.SfAssessment()
+	// temp.MeituanAssessment()
+	temp.RedBookAssessment()
 }
 
 func assessmentTest() {
@@ -102,6 +112,7 @@ func dynamicProgrammingTest() {
 	__dynamicProgramming.MinDistance()
 	__dynamicProgramming.Dji()
 	__dynamicProgramming.Trap()
+	__dynamicProgramming.CanIWin()
 }
 
 func greedyTest() {
