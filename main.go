@@ -42,7 +42,8 @@ func main() {
 	// temp.JdAssessment()
 	// temp.SfAssessment()
 	// temp.MeituanAssessment()
-	temp.RedBookAssessment()
+	// temp.RedBookAssessment()
+	temp.XingyeAssessment()
 }
 
 func assessmentTest() {
