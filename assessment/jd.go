@@ -1,5 +1,5 @@
-// Package temp provides ...
-package temp
+// Package assessment provides ...
+package assessment
 
 import (
 	"fmt"

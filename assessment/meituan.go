@@ -1,4 +1,4 @@
-package temp
+package assessment
 
 import (
 	"fmt"
@@ -98,21 +98,21 @@ func mtAss3Handle(arrA, arrB []int) {
 		return -1
 	}
 
-	min1 := func(a, b int) int {
-		if a < b {
-			return a
-		} else {
-			return b
-		}
-	}
-
-	max1 := func(a, b int) int {
-		if a > b {
-			return a
-		} else {
-			return b
-		}
-	}
+	//min1 := func(a, b int) int {
+	//	if a < b {
+	//		return a
+	//	} else {
+	//		return b
+	//	}
+	//}
+	//
+	//max1 := func(a, b int) int {
+	//	if a > b {
+	//		return a
+	//	} else {
+	//		return b
+	//	}
+	//}
 
 	var arrAP, arrANp, arrBP, arrBNp []int
 	res := make([]int, len(arrA))

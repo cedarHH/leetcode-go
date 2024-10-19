@@ -1,4 +1,4 @@
-package temp
+package assessment
 
 func SxfAssessment() {
 

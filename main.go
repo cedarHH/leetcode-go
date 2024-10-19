@@ -13,8 +13,8 @@ import (
 	__monostack "leetcode/10_monostack"
 	"leetcode/assessment"
 	"leetcode/concurrency"
+	"leetcode/exercises"
 	"leetcode/network"
-	"leetcode/temp"
 	"sync"
 	"time"
 )
@@ -33,32 +33,38 @@ func main() {
 	// graphTest()
 	// networkTest()
 	// concurrencyTest()
-	// assessmentTest()
-	// temp.RedisExample()
-	// temp.ShopeeAssessment()
-	// temp.DewuAssessment()
-	// temp.TripAssessment()
-	// temp.SxfAssessment()
-	// temp.JdAssessment()
-	// temp.SfAssessment()
-	// temp.MeituanAssessment()
-	// temp.RedBookAssessment()
-	temp.XingyeAssessment()
+	// exercisesTest()
+	assessmentTest()
 }
 
 func assessmentTest() {
-	//assessment.FindMode()
-	//assessment.ThousandSeparator()
-	//assessment.GetNoZeroIntegers()
-	//assessment.MinAreaRect()
-	//assessment.CoinChange()
-	//assessment.BitSetTest()
-	assessment.Misc()
-	assessment.AssignTasks()
-	assessment.CountRangeSum()
-	assessment.NumIslands()
-	assessment.CountPrimes()
-	assessment.Temp()
+	//assessment.RedisExample()
+	//assessment.ShopeeAssessment()
+	//assessment.DewuAssessment()
+	//assessment.TripAssessment()
+	//assessment.SxfAssessment()
+	//assessment.JdAssessment()
+	//assessment.SfAssessment()
+	//assessment.MeituanAssessment()
+	//assessment.RedBookAssessment()
+	//assessment.XingyeAssessment()
+	//assessment.BaiduAssessment()
+	assessment.ShanghaiAssessment()
+}
+
+func exercisesTest() {
+	//exercises.FindMode()
+	//exercises.ThousandSeparator()
+	//exercises.GetNoZeroIntegers()
+	//exercises.MinAreaRect()
+	//exercises.CoinChange()
+	//exercises.BitSetTest()
+	exercises.Misc()
+	exercises.AssignTasks()
+	exercises.CountRangeSum()
+	exercises.NumIslands()
+	exercises.CountPrimes()
+	exercises.Temp()
 }
 
 func networkTest() {

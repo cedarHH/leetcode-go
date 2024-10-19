@@ -1,4 +1,4 @@
-package assessment
+package exercises
 
 import (
 	"container/heap"

@@ -1,7 +1,9 @@
-package temp
+package assessment
+
+import "fmt"
 
 func XingyeAssessment() {
-	maxLength([]int{1, 2, 3, 4, 5}, 3)
+	fmt.Println(maxLength([]int{1, 2, 3, 4, 5}, 3))
 }
 
 func maxLength(nums []int, k int) int {
