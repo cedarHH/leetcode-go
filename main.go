@@ -49,7 +49,11 @@ func assessmentTest() {
 	//assessment.RedBookAssessment()
 	//assessment.XingyeAssessment()
 	//assessment.BaiduAssessment()
-	assessment.ShanghaiAssessment()
+	//assessment.ShanghaiAssessment()
+	//assessment.XiaomiAssessment()
+	//assessment.XhsAssessment()
+	//assessment.TyyAssessment()
+	assessment.DewuAssessment2()
 }
 
 func exercisesTest() {
